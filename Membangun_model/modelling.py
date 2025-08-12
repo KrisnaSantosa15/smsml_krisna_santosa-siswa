@@ -33,7 +33,7 @@ mlflow.autolog(disable=True)
 input_example = X_train[0:5]
 
 timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-run_name = f"Random_ForestRandomForest_Tuning_SMOTE_Threshold_{timestamp}"
+run_name = f"Random_Forest_{timestamp}"
 
 with mlflow.start_run(run_name=run_name):
     n_estimators = 100
